@@ -38,7 +38,7 @@ PATH → The URL (like /, /about, /users)
 HANDLER → A function (req, res) that runs when the route is matched
 
 
-## 🛠️ Middleware in Express.js
+# 🛠️ Middleware in Express.js
 
 ## 🔹 What is Middleware?
 In **Express.js**, **middleware** is a function that sits between the **request (req)** and the **response (res)**.  
