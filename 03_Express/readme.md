@@ -35,6 +35,8 @@ PATH → The URL (like /, /about, /users)
 
 HANDLER → A function (req, res) that runs when the route is matched
 
+---
+
 # 🛠️ Middleware in Express.js
 
 ## 🔹 What is Middleware?
