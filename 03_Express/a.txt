@@ -1,0 +1,22 @@
+xinput list
+xinput enable <your-touchpad-id>
+xinput enable 12
+apt list xserver-xorg-input-libinput
+sudo apt install xserver-xorg-input-libinput
+sudo apt install xserver-xorg-input-synaptics
+sudo reboot
+dmesg | grep -i touchpad
+sudo apt update && sudo apt upgrade -y
+sudo reboot
+dmesg | grep -i i2c
+cat /proc/bus/input/devices
+sudo apt install linux-oem-22.04a
+lsmod | grep i2c
+sudo modprobe i2c-hid-acpi
+sudo modprobe i2c-hid
+sudo apt install git build-essential dkms
+git clone https://github.com/platronic/asus-touchpad-dkms.git
+cd asus-touchpad-dkms
+sudo dkms add .
+sudo dkms build asus-touchpad/1.0
+sudo dkms install asus-touchpad/1.0
